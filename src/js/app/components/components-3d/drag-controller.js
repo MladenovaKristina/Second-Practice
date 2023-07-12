@@ -39,7 +39,7 @@ export default class DragController extends THREE.Object3D {
         this._pointer.y = -(y / window.innerHeight) * 2 + 1;
 
         this._raycaster.setFromCamera(this._pointer, this._camera);
-        const intersects = this._raycaster.intersectObjects(this._scene.children);
+        const intersects = this._raycaster.intersectObjects(this._scene.children, true).filter(object => object.object.geometry.type === 'BoxGeometry');
 
         if (intersects != 0) {
             this.color();
