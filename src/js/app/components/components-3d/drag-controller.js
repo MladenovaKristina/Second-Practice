@@ -44,8 +44,7 @@ export default class DragController extends THREE.Object3D {
             this.color();
             this._object.position.x = this._pointer.x;
             this._object.position.y = this._pointer.y;
-        }
-
+        } else return;
     }
 
     color() {
