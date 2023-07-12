@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import Helpers from "../../helpers/helpers";
 
 export default class Box extends THREE.Object3D {
     constructor() {
