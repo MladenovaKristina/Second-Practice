@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import Helpers from "../../helpers/helpers";
 import Box from "./box";
 import DragController from "./drag-controller";
 
