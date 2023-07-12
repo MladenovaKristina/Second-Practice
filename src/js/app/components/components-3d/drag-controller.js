@@ -41,9 +41,7 @@ export default class DragController extends THREE.Object3D {
 
         if (intersects.length > 0) {
             this.color();
-            // Get the intersection point in world coordinates
             const intersectionPoint = intersects[0].point;
-            // Set the object's position
             this._object.position.copy(intersectionPoint).setZ(0);
         }
     }
